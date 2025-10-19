@@ -1,0 +1,20 @@
+/* 1) تعريف الخط */
+@font-face {
+  font-family: 'Fatimah';
+  src: url('https://nabbatoil-rgb.github.io/font/fatimahb.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2) تطبيق الخط على النصوص فقط (بدون كسر الأيقونات) */
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, li, a, span, strong, em, small, button, input, textarea, select, label {
+  font-family: 'Fatimah', system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif !important;
+}
+
+/* 3) استثناءات الأيقونات */
+[class^="fa"], [class*=" fa-"], .fa, .icon, i[class*="icon"], .material-icons, svg, svg * {
+  font-family: inherit !important;
+}
